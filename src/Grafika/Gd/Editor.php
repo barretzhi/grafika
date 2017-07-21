@@ -109,6 +109,16 @@ final class Editor implements EditorInterface
         $gd2 = $image2->getCore();
 
         $canvas = imagecreatetruecolor( $w, $h );
+
+        /**
+         * @auther zhangzhi
+         * @time 2017-04-18 10:25
+         */
+        $c=imagecolorallocatealpha($canvas , 0 , 0 , 0 ,127);//拾取一个完全透明的颜色
+        imagealphablending($canvas ,false);//关闭混合模式，以便透明颜色能覆盖原画布
+        imagefill($canvas , 0 , 0, $c);//填充
+        imagesavealpha($canvas ,true);//设置保存PNG时保留透明通道信息
+
         imagecopy( $canvas, $gd1, 0, 0, 0, 0, $w, $h );
 
         $type = strtolower( $type );
