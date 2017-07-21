@@ -1,5 +1,5 @@
 {
-    "name": "kosinix/grafika",
+    "name": "barretzhi/grafika",
     "description": "An image manipulation library for PHP.",
     "keywords": ["grafika"],
     "homepage": "http://kosinix.github.io/grafika",
@@ -10,8 +10,8 @@
     ],
     "authors": [
         {
-            "name": "Nico Amarilla",
-            "homepage": "https://www.kosinix.com"
+            "name": "Barret Zhi",
+            "homepage": "https://www.huangdouzai.com"
         }
     ],
     "require": {
